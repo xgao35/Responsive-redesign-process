@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive Redesign</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+        <h1>Responsive Redesign</h1>
+        <div class="overview">
+            <p>Redesigning a webpage to be more user friendly and responsive to different screen sizes.</p>
+        </div>
+        <div class="info-bar">
+            <ul class="info">
+                <li class="info1">Project type: course assignment</li>
+                <li class="info2">Duration: 2 weeks</li>
+                <li class="info3">Team: individual</li>
+            </ul>
+        </div>
+        <!-- include intro image???? -->
+        <div class="intro-image-container">
+            <img src="intro-image.png" alt="screenshot of original interface" width=100% height=100%/>
+        </div>
 
+        <h2>Website Introduction</h2>
+        <div class="web-intro-info">
+            <ul class="web-intro-list">
+                <li><a href="https://quickposes.com/en/gestures/timed" target="_blank">Quickposes</a> is a website that provides free images for anyone to practice their drawing skills</li>
+                <li>Users can customize their drawing sessions by selecting the subject they would like to draw, practice duration, and number of images</li>
+                <li>"Timed Practice" is one of the most commonly used features</li>
+            </ul>
+        </div>
+
+        <h2>Indentify Usability Problems</h2>
+        <h3>general observations</h3>
+        <div class="gen-obs-container">
+            <div class="gen-obs-img-container">
+                <img src="general-observation.png" alt="screenshot of original interface" width=100% height=auto/>
+            </div>
+            <div class="gen-obs-text-container">
+                <ol class="obs-list">
+                    <li>The page uses various fonts that can be visually confusing</li>
+                    <li>The introduction contains some unnecessary information that can discourage the users from reading it. For example, the second sentence introduces the benefits of figure drawing, which would fit better in the “Procedure” or “Tips” section</li>
+                    <li>The download app ad has brighter colors than everything else on the page. It is also at a central location that disrupts the user flow from Quickposes introduction to set up their own timed practice</li>
+                    <li>The custom practice session buttons are too visually similar to the section titles</li>
+                    <li>The menu bar only uses bolding to indicate selection, making it difficult to see what section the user is on at a glance</li>
+                    <li>The drawing session customization section seems clustered with lots of options</li>
+                    <li>The “start” button is too visually similar to the rest of the buttons</li>
+                    <li>It is unclear what the “procedure” section falls under. The information starting from the “Procedure” section seems to be drawing tips for the user, but the user has to read and figure it out themselves.</li>
+                    <li>Procedures and example videos can be redundant information for frequent users</li>
+                </ol>
+            </div>
+        </div>
+
+        <h3>Accessibility Evaluation</h3>
+        <div class="accessibility-container">
+            <p class="accessibility-des">Assessing the accessibility of the Quickposes website with the help of <a href="https://wave.webaim.org/" target="_blank">WAVE Web Accessibility Evaluation Tool</a></p>
+            <ul class="accessibility-obs">
+                <li>The orange text provides very low contrast from the background</li>
+                <li>Alternative text missing for various images</li>
+                <li>The “custom intervals” note is too small and difficult to read</li>
+            </ul>
+        </div>
+
+        <h2>Redesign</h2>
+        <h3>low fidelity wireframing</h3>
+        <div class="wireframe-container">
+            <div class="wireframe-text">
+                <ol class="'wireframe-list">
+                    <li>Unify the fonts used in the page</li>
+                    <li>Edit the introduction, so it only contains the most basic information about the website</li>
+                    <li>Move the “get the app” advertisement to the navigation bar. Even though the advertisment is not visual pleasing, they are necessary to support the website</li>
+                    <li>Change the styling of image categories to look less like buttons</li>
+                    <li>Use shading or color to better indicate selection on the menu bar</li>
+                    <li>Add “image direction” as a drawing session customization option, so users can filter horizontal or vertical images that make the most use out of their screen spaces</li>
+                    <li>Move the Quickpose certificate option to the center of the screen to separate it from the customization section</li>
+                    <li>Move the “start” button to the center of the screen to separate it from the customization section, and to provide better flow from the previous certificate section</li>
+                    <li>Move “Tips and Tricks” to a separate page, so frequent users do not need to see the same information every time</li>
+                    <li>Move the “About” section to a separate page to declutter the current page</li>
+                </ol>
+            </div>
+            <div class="wireframe-img1-container">
+                <img src="wf_laptop.png" alt="wireframe of laptop-sized interface" width=100% height=auto/>
+            </div>
+            <div class="wireframe-img2-container">
+                <img src="wf_ipad.png" alt="wireframe of ipad-sized interface" width=100% height=auto/>
+            </div>
+            <div class="wireframe-img3-container">
+                <img src="wf_phone.png" alt="wireframe of phone-sized interface" width=100% height=auto/>
+            </div>
+        </div>
+
+        <h3>visual style guide</h3>
+        <div class="guide-container">
+            <img src="visual_style_guide.png" alt="visual style guide" width=80% height=auto/>
+        </div>
+
+        <h3>high fidelity prototype</h3>
+            <div class="hifi-text-container">
+                <p>The original, unannotated figma document can be found <a href="https://www.figma.com/file/1uBW8ndF08kEUHlG5QwaFk/QuickPoses?node-id=0%3A1" target="_blank">here</a>.</p>
+            </div>
+            <div class="high-fi-container">
+                <div class="high-fi1">
+                    <img src="annotated_highfi.png" alt="annotated high fidelity prototype for laptop-sized interface" width=100% height=auto/>
+                </div>
+                <div class="high-fi2">
+                    <img src="highfi_ipad.png" alt="high fidelity prototype for ipad-sized interface" width=100% height=auto/>
+                </div>
+                <div class="high-fi3">
+                    <img src="highfi_phone.png" alt="high fidelity prototype for phone-sized interface" width=100% height=auto/>
+                </div>
+            </div>
+
+        <h2>Final Webpage</h2>
+        <div class="final-link-container">
+            <button class="button" onclick="window.location.href='https://hungrylizard232.github.io/Responsive-redesign/';">final webpage link</button>
+        </div>
+    </main>
+  </body>
+</html>
